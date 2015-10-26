@@ -30,9 +30,9 @@ function run() {
   container.addChild(mc);
   movieClips.push(mc);
 
-  mc.play();
-  pixiAnimationSpeedHandler.start();
   pixiAnimationSpeedHandler.addClip(mc, 24);
+  pixiAnimationSpeedHandler.start();
+  mc.play();
 
   animate();
 }
